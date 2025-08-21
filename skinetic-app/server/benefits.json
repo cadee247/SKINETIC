@@ -1,0 +1,663 @@
+{
+  "ingredients": {
+    "niacinamide": {
+      "normal": ["Improves skin barrier function", "Reduces dullness", "Balances oil production"],
+      "oily": ["Reduces sebum production", "Minimizes appearance of pores"],
+      "dry": ["Strengthens moisture barrier", "Soothes redness"],
+      "sensitive": ["Calms irritation", "Reduces redness"]
+    },
+    "glycolic acid": {
+      "normal": ["Improves skin texture", "Brightens complexion"],
+      "oily": ["Exfoliates excess oil", "Unclogs pores"],
+      "dry": ["Gentle exfoliation", "Smoothens skin"],
+      "sensitive": ["Use with caution", "May cause irritation"]
+    },
+    "retinol": {
+      "normal": ["Boosts collagen", "Reduces fine lines"],
+      "oily": ["Reduces acne", "Improves texture"],
+      "dry": ["Start with low concentration", "Always follow with moisturizer"],
+      "sensitive": ["Patch test recommended", "May cause irritation"]
+    },
+    "hyaluronic acid": {
+      "normal": ["Hydrates skin", "Plumps fine lines"],
+      "oily": ["Balances moisture", "Non-greasy hydration"],
+      "dry": ["Intense hydration", "Soothes dryness"],
+      "sensitive": ["Gentle hydration", "Reduces irritation"]
+    },
+    "vitamin C": {
+      "normal": ["Brightens skin", "Reduces dark spots"],
+      "oily": ["Controls oiliness", "Brightens complexion"],
+      "dry": ["Hydrates and brightens", "Reduces dullness"],
+      "sensitive": ["Soothes redness", "Brightens without irritation"]
+    },
+    "salicylic acid": {
+      "normal": ["Exfoliates dead skin", "Reduces blemishes"],
+      "oily": ["Controls excess oil", "Unclogs pores"],
+      "dry": ["Gentle exfoliation", "Reduces dryness"],
+      "sensitive": ["Calms irritation", "Reduces redness"]
+    },
+    "peptides": {
+      "normal": ["Boosts collagen", "Improves elasticity"],
+      "oily": ["Balances oil production", "Strengthens skin barrier"],
+      "dry": ["Hydrates and firms", "Reduces fine lines"],
+      "sensitive": ["Soothes irritation", "Strengthens skin barrier"]
+    },
+    "zinc": {
+      "normal": ["Reduces inflammation", "Balances oil"],
+      "oily": ["Controls excess sebum", "Reduces acne"],
+      "dry": ["Soothes dryness", "Strengthens barrier"],
+      "sensitive": ["Calms irritation", "Reduces redness"]
+    },
+    "ceramides": {
+      "normal": ["Strengthens skin barrier", "Hydrates"],
+      "oily": ["Balances moisture", "Non-greasy hydration"],
+      "dry": ["Intense hydration", "Repairs barrier"],
+      "sensitive": ["Gentle hydration", "Reduces irritation"]
+    },
+    "aloe vera": {
+      "normal": ["Soothes skin", "Hydrates"],
+      "oily": ["Balances oil", "Reduces shine"],
+      "dry": ["Intense hydration", "Soothes dryness"],
+      "sensitive": ["Calms irritation", "Reduces redness"]
+    }
+  },
+  "cerave": {
+    "Hydrating Facial Cleanser": {
+      "skin_type": ["normal", "dry", "sensitive"],
+      "key_ingredients": ["ceramides", "hyaluronic acid"],
+      "benefits": {
+        "normal": ["Cleanses without stripping", "Maintains skin barrier"],
+        "oily": ["Gentle non-foaming cleanse", "Won't clog pores"],
+        "dry": ["Removes impurities while hydrating", "Supports barrier repair"],
+        "sensitive": ["Fragrance-free and non-irritating", "pH-balanced"]
+      }
+    },
+    "Foaming Facial Cleanser": {
+      "skin_type": ["oily", "combination", "normal"],
+      "key_ingredients": ["ceramides", "niacinamide"],
+      "benefits": {
+        "normal": ["Balances and cleanses", "Rinses clean without residue"],
+        "oily": ["Removes excess oil and impurities", "Helps keep pores clear"],
+        "dry": ["Gentle foaming cleanse", "Follow with moisturizer to prevent tightness"],
+        "sensitive": ["Non-stripping surfactants", "Minimal irritation potential"]
+      }
+    },
+    "Moisturizing Cream": {
+      "skin_type": ["dry", "very dry", "sensitive", "normal"],
+      "key_ingredients": ["ceramides", "hyaluronic acid"],
+      "benefits": {
+        "normal": ["Long-lasting hydration", "Strengthens moisture barrier"],
+        "oily": ["Rich but non-comedogenic", "Helps reduce dehydration"],
+        "dry": ["Intense, all-day moisture", "Repairs and protects barrier"],
+        "sensitive": ["Fragrance-free", "Soothes dryness and discomfort"]
+      }
+    },
+    "Moisturizing Lotion": {
+      "skin_type": ["normal", "dry", "sensitive"],
+      "key_ingredients": ["ceramides", "hyaluronic acid"],
+      "benefits": {
+        "normal": ["Lightweight daily hydration", "Supports healthy barrier"],
+        "oily": ["Light, non-greasy feel", "Hydrates without shine"],
+        "dry": ["Buildable moisture", "Helps reduce roughness"],
+        "sensitive": ["Gentle and fragrance-free", "Suitable for face and body"]
+      }
+    },
+    "Hydrating Cream-to-Foam Cleanser": {
+      "skin_type": ["normal", "dry", "sensitive"],
+      "key_ingredients": ["ceramides", "hyaluronic acid", "amino acids"],
+      "benefits": {
+        "normal": ["Creamy lather removes sunscreen/makeup", "Keeps barrier intact"],
+        "oily": ["Thorough cleanse without over-drying", "Rinses clean"],
+        "dry": ["Hydrating wash that foams", "Leaves skin comfortable"],
+        "sensitive": ["Gentle surfactants", "Minimal irritation"]
+      }
+    },
+    "SA Smoothing Cleanser": {
+      "skin_type": ["oily", "combination", "rough", "bumpy"],
+      "key_ingredients": ["salicylic acid", "ceramides", "niacinamide"],
+      "benefits": {
+        "normal": ["Refines texture with mild exfoliation", "Keeps barrier supported"],
+        "oily": ["Unclogs pores and reduces oil", "Improves smoothness"],
+        "dry": ["Gentle exfoliation; follow with moisturizer", "Helps flakiness"],
+        "sensitive": ["Low-foam, fragrance-free", "Introduce gradually to reduce irritation"]
+      }
+    },
+    "Renewing SA Cream": {
+      "skin_type": ["dry", "rough", "bumpy", "sensitive"],
+      "key_ingredients": ["salicylic acid", "ceramides", "lactic acid"],
+      "benefits": {
+        "normal": ["Smoother texture over time", "Locks in moisture"],
+        "oily": ["Non-greasy exfoliating hydration", "Helps prevent clogged pores"],
+        "dry": ["Softens rough patches", "Exfoliates while deeply moisturizing"],
+        "sensitive": ["Fragrance-free; start slowly", "Reduces scaliness and discomfort"]
+      }
+    },
+    "Hydrating Mineral Sunscreen SPF 30": {
+      "skin_type": ["normal", "sensitive", "dry"],
+      "key_ingredients": ["zinc oxide", "titanium dioxide", "ceramides"],
+      "benefits": {
+        "normal": ["Broad-spectrum mineral protection", "Comfortable wear"],
+        "oily": ["Non-chemical filters; set with powder if shiny", "Non-comedogenic"],
+        "dry": ["Ceramide support to prevent dryness", "Hydrating finish"],
+        "sensitive": ["Mineral UV filters for sensitive skin", "Fragrance-free"]
+      }
+    },
+    "Skin Renewing Night Cream": {
+      "skin_type": ["normal", "dry", "sensitive"],
+      "key_ingredients": ["peptides", "niacinamide", "ceramides", "hyaluronic acid"],
+      "benefits": {
+        "normal": ["Smoother, supple skin overnight", "Supports barrier renewal"],
+        "oily": ["Nourishing yet not greasy", "Improves texture appearance"],
+        "dry": ["Deep overnight hydration", "Visibly plumps fine lines"],
+        "sensitive": ["Gentle peptide blend", "Calms and fortifies skin"]
+      }
+    },
+    "Eye Repair Cream": {
+      "skin_type": ["all"],
+      "key_ingredients": ["ceramides", "hyaluronic acid", "niacinamide"],
+      "benefits": {
+        "normal": ["Hydrates delicate eye area", "Softens fine lines look"],
+        "oily": ["Lightweight and non-greasy", "Layers well under makeup"],
+        "dry": ["Relieves tightness and dryness", "Locks in moisture"],
+        "sensitive": ["Ophthalmologist tested", "Fragrance-free, gentle"]
+      }
+    }
+  },
+  "ponds": {
+    "Flawless Radiance Derma+ Hydrating Day Gel": {
+      "skin_type": ["normal", "combination"],
+      "key_ingredients": ["niacinamide", "vitamin C", "hyaluronic acid"],
+      "benefits": {
+        "normal": "Boosts radiance, hydrates, improves skin tone",
+        "dry": "",
+        "oily": "Hydrates lightly without heavy residue",
+        "combination": "Balances hydration and brightens dull areas",
+        "sensitive": ""
+      }
+    },
+    "Flawless Radiance Derma+ Night Cream": {
+      "skin_type": ["normal", "dry"],
+      "key_ingredients": ["niacinamide", "vitamin C", "peptides"],
+      "benefits": {
+        "normal": "Brightens and smooths skin overnight",
+        "dry": "Deeply nourishes and reduces dullness",
+        "oily": "",
+        "combination": "",
+        "sensitive": ""
+      }
+    },
+    "Perfect Colour Complex Beauty Cream (Normal to Oily Skin)": {
+      "skin_type": ["normal", "oily"],
+      "key_ingredients": ["niacinamide", "zinc"],
+      "benefits": {
+        "normal": "Evens out tone and enhances glow",
+        "dry": "",
+        "oily": "Controls shine and improves clarity",
+        "combination": "",
+        "sensitive": ""
+      }
+    },
+    "Perfect Colour Complex Beauty Cream (Dry Skin)": {
+      "skin_type": ["dry"],
+      "key_ingredients": ["ceramides", "niacinamide"],
+      "benefits": {
+        "normal": "",
+        "dry": "Restores skin barrier, hydrates, evens tone",
+        "oily": "",
+        "combination": "",
+        "sensitive": ""
+      }
+    },
+    "Pimple Clear Face Wash": {
+      "skin_type": ["oily", "sensitive"],
+      "key_ingredients": ["salicylic acid", "zinc"],
+      "benefits": {
+        "normal": "",
+        "dry": "",
+        "oily": "Clears breakouts and reduces excess oil",
+        "combination": "",
+        "sensitive": "Gently treats acne without harshness"
+      }
+    },
+    "Age Miracle Wrinkle Corrector Night Cream": {
+      "skin_type": ["normal", "dry"],
+      "key_ingredients": ["retinol", "peptides"],
+      "benefits": {
+        "normal": "Reduces fine lines and supports skin renewal",
+        "dry": "Hydrates and restores firmness",
+        "oily": "",
+        "combination": "",
+        "sensitive": ""
+      }
+    },
+    "Lasting Oil Control Vanishing Cream (Very Oily Skin)": {
+      "skin_type": ["oily"],
+      "key_ingredients": ["zinc", "niacinamide"],
+      "benefits": {
+        "normal": "",
+        "dry": "",
+        "oily": "Controls excess shine, reduces clogged pores",
+        "combination": "",
+        "sensitive": ""
+      }
+    },
+    "Flawless Radiance Micellar Water": {
+      "skin_type": ["sensitive", "normal"],
+      "key_ingredients": ["aloe vera", "vitamin C"],
+      "benefits": {
+        "normal": "Cleanses gently while brightening",
+        "dry": "",
+        "oily": "",
+        "combination": "",
+        "sensitive": "Soothes irritation while removing dirt"
+      }
+    },
+    "Perfect Colour Complex Anti Marks Toner": {
+      "skin_type": ["oily", "normal"],
+      "key_ingredients": ["niacinamide", "glycolic acid"],
+      "benefits": {
+        "normal": "Evens tone, reduces mild marks",
+        "dry": "",
+        "oily": "Exfoliates, reduces blemishes and oiliness",
+        "combination": "",
+        "sensitive": ""
+      }
+    },
+    "Deep Clean Face Scrub": {
+      "skin_type": ["normal", "oily"],
+      "key_ingredients": ["salicylic acid", "micro beads"],
+      "benefits": {
+        "normal": "Cleans deeply, refreshes dull skin",
+        "dry": "",
+        "oily": "Unclogs pores and controls oil build-up",
+        "combination": "",
+        "sensitive": ""
+      }
+    }
+  },
+  "simple": {
+    "Kind to Skin Micellar Cleansing Water": {
+      "skin_type": ["normal", "sensitive"],
+      "key_ingredients": ["glycerin", "panthenol"],
+      "benefits": {
+        "normal": "Gently cleans without drying, maintains hydration",
+        "oily": "",
+        "dry": "",
+        "combination": "",
+        "sensitive": "Soothes and calms while removing makeup and dirt"
+      }
+    },
+    "Kind to Skin Facial Wash": {
+      "skin_type": ["normal", "sensitive"],
+      "key_ingredients": ["glycerin", "bisabolol"],
+      "benefits": {
+        "normal": "Cleanses without stripping, leaves skin refreshed",
+        "oily": "",
+        "dry": "",
+        "combination": "",
+        "sensitive": "Reduces irritation and redness with bisabolol"
+      }
+    },
+    "Replenishing Rich Moisturiser": {
+      "skin_type": ["dry", "sensitive"],
+      "key_ingredients": ["glycerin", "panthenol", "vitamin E"],
+      "benefits": {
+        "normal": "",
+        "oily": "",
+        "dry": "Deep hydration and nourishment, restores barrier",
+        "combination": "",
+        "sensitive": "Vitamin E and panthenol calm and protect sensitive skin"
+      }
+    },
+   "simple": {
+  "Kind to Skin Micellar Cleansing Water": {
+    "skin_type": ["normal", "sensitive"],
+    "key_ingredients": ["glycerin", "panthenol"],
+    "benefits": {
+      "normal": "Gently cleans without drying, maintains hydration",
+      "oily": "none",
+      "dry": "none",
+      "combination": "none",
+      "sensitive": "Soothes and calms while removing makeup and dirt"
+    }
+  },
+  "Kind to Skin Facial Wash": {
+    "skin_type": ["normal", "sensitive"],
+    "key_ingredients": ["glycerin", "bisabolol"],
+    "benefits": {
+      "normal": "Cleanses without stripping, leaves skin refreshed",
+      "oily": "none",
+      "dry": "none",
+      "combination": "none",
+      "sensitive": "Reduces irritation and redness with bisabolol"
+    }
+  },
+  "Replenishing Rich Moisturiser": {
+    "skin_type": ["dry", "sensitive"],
+    "key_ingredients": ["glycerin", "panthenol", "vitamin E"],
+    "benefits": {
+      "normal": "none",
+      "oily": "none",
+      "dry": "Deep hydration and nourishment, restores barrier",
+      "combination": "none",
+      "sensitive": "Vitamin E and panthenol calm and protect sensitive skin"
+    }
+  },
+  "Hydrating Light Moisturiser": {
+    "skin_type": ["normal", "oily"],
+    "key_ingredients": ["glycerin", "pro-vitamin B5"],
+    "benefits": {
+      "normal": "Lightweight hydration, keeps skin balanced",
+      "oily": "Moisturises without clogging pores or excess shine",
+      "dry": "none",
+      "combination": "none",
+      "sensitive": "none"
+    }
+  },
+  "Soothing Facial Toner": {
+    "skin_type": ["sensitive", "normal"],
+    "key_ingredients": ["bisabolol", "pro-vitamin B5"],
+    "benefits": {
+      "normal": "Refreshes skin and restores pH balance",
+      "oily": "none",
+      "dry": "none",
+      "combination": "none",
+      "sensitive": "Calms redness and irritation, supports skin healing"
+    }
+  },
+  "Purifying Cleansing Lotion": {
+    "skin_type": ["oily", "combination"],
+    "key_ingredients": ["zinc", "glycerin"],
+    "benefits": {
+      "normal": "none",
+      "oily": "Controls excess oil, reduces shine",
+      "dry": "none",
+      "combination": "Balances oily zones without overdrying dry areas",
+      "sensitive": "none"
+    }
+  },
+  "Moisturising Face Wash": {
+    "skin_type": ["normal", "dry"],
+    "key_ingredients": ["glycerin", "vitamin E"],
+    "benefits": {
+      "normal": "Gently cleans while maintaining hydration",
+      "oily": "none",
+      "dry": "Hydrates while cleansing, prevents tightness",
+      "combination": "none",
+      "sensitive": "none"
+    }
+  },
+  "Hydrating Serum": {
+    "skin_type": ["dry", "sensitive"],
+    "key_ingredients": ["hyaluronic acid", "glycerin"],
+    "benefits": {
+      "normal": "none",
+      "oily": "none",
+      "dry": "Provides deep, long-lasting hydration",
+      "combination": "none",
+      "sensitive": "Soothes and locks in moisture without irritation"
+    }
+  },
+  "Gentle Exfoliating Wash": {
+    "skin_type": ["normal", "oily"],
+    "key_ingredients": ["lactic acid", "vitamin E"],
+    "benefits": {
+      "normal": "Removes dead skin cells gently for smoother texture",
+      "oily": "Unclogs pores, reduces oil buildup",
+      "dry": "none",
+      "combination": "none",
+      "sensitive": "none"
+    }
+  },
+  "Refreshing Facial Wipes": {
+    "skin_type": ["all"],
+    "key_ingredients": ["glycerin", "aloe vera"],
+    "benefits": {
+      "normal": "Quick cleanse and refresh on the go",
+      "oily": "Removes excess oil, leaves skin fresh",
+      "dry": "Hydrates while cleansing with aloe vera",
+      "combination": "Balances skin without stripping",
+      "sensitive": "Gentle formula minimizes irritation"
+    }
+  }
+}
+  },
+  "nivea": {
+  "Gentle Facial Cleansing Wipes": {
+    "skin_type": ["normal", "sensitive"],
+    "key_ingredients": ["glycerin", "panthenol"],
+    "benefits": {
+      "normal": ["removes dirt and makeup without drying"],
+      "oily": ["none"],
+      "dry": ["none"],
+      "sensitive": ["soothes and prevents irritation"],
+      "combination": ["none"]
+    }
+  },
+  "Soft Moisturising Cream": {
+    "skin_type": ["normal", "dry"],
+    "key_ingredients": ["jojoba oil", "vitamin E"],
+    "benefits": {
+      "normal": ["light hydration and softness"],
+      "oily": ["none"],
+      "dry": ["intense nourishment and long-lasting moisture"],
+      "sensitive": ["none"],
+      "combination": ["none"]
+    }
+  },
+  "Men Sensitive Face Wash": {
+    "skin_type": ["sensitive", "oily"],
+    "key_ingredients": ["licorice extract", "vitamin E"],
+    "benefits": {
+      "normal": ["none"],
+      "oily": ["controls excess oil and refreshes skin"],
+      "dry": ["none"],
+      "sensitive": ["calms redness and irritation"],
+      "combination": ["none"]
+    }
+  },
+  "MicellAIR Skin Breathe Micellar Water": {
+    "skin_type": ["normal", "sensitive"],
+    "key_ingredients": ["glycerin", "hamamelis extract"],
+    "benefits": {
+      "normal": ["removes makeup and impurities effectively"],
+      "oily": ["none"],
+      "dry": ["none"],
+      "sensitive": ["gentle cleansing without irritation"],
+      "combination": ["none"]
+    }
+  },
+  "Q10 Anti-Wrinkle Day Cream": {
+    "skin_type": ["normal", "dry"],
+    "key_ingredients": ["coenzyme Q10", "creatine"],
+    "benefits": {
+      "normal": ["reduces fine lines and boosts firmness"],
+      "oily": ["none"],
+      "dry": ["deep hydration and wrinkle reduction"],
+      "sensitive": ["none"],
+      "combination": ["none"]
+    }
+  },
+  "Hydrating Day Cream": {
+    "skin_type": ["normal", "oily"],
+    "key_ingredients": ["glycerin", "panthenol"],
+    "benefits": {
+      "normal": ["lightweight daily hydration"],
+      "oily": ["hydration without clogging pores"],
+      "dry": ["none"],
+      "sensitive": ["none"],
+      "combination": ["none"]
+    }
+  },
+  "Intensive Moisture Body Lotion": {
+    "skin_type": ["dry", "sensitive"],
+    "key_ingredients": ["glycerin", "urea"],
+    "benefits": {
+      "normal": ["none"],
+      "oily": ["none"],
+      "dry": ["restores moisture barrier and relieves dryness"],
+      "sensitive": ["calms and hydrates delicate skin"],
+      "combination": ["none"]
+    }
+  },
+  "Pure & Natural Facial Oil": {
+    "skin_type": ["dry"],
+    "key_ingredients": ["avocado oil", "almond oil"],
+    "benefits": {
+      "normal": ["none"],
+      "oily": ["none"],
+      "dry": ["deep nourishment and skin softening"],
+      "sensitive": ["none"],
+      "combination": ["none"]
+    }
+  },
+  "Refreshingly Clean Face Wash": {
+    "skin_type": ["normal", "oily"],
+    "key_ingredients": ["salicylic acid", "menthol"],
+    "benefits": {
+      "normal": ["refreshes and removes impurities"],
+      "oily": ["controls shine and unclogs pores"],
+      "dry": ["none"],
+      "sensitive": ["none"],
+      "combination": ["none"]
+    }
+  },
+  "Anti-Age Firming Night Cream": {
+    "skin_type": ["normal", "dry"],
+    "key_ingredients": ["hyaluronic acid", "peptides"],
+    "benefits": {
+      "normal": ["firms and plumps skin overnight"],
+      "oily": ["none"],
+      "dry": ["hydrates and reduces visible wrinkles"],
+      "sensitive": ["none"],
+      "combination": ["none"]
+    }
+  }
+},
+
+
+  "the_ordinary": {
+    "Niacinamide 10% + Zinc 1%": {
+      "skin_type": ["oily", "combination"],
+      "key_ingredients": ["niacinamide", "zinc"],
+      "benefits": {
+        "oily": ["Regulates sebum production", "Minimizes pores", "Reduces blemishes"],
+        "combination": ["Balances oil zones", "Improves skin texture"],
+        "dry": ["none"],
+        "normal": ["none"],
+        "sensitive": ["none"]
+      }
+    }
+    },
+    "Hyaluronic Acid 2% + B5": {
+      "skin_type": ["dry", "normal"],
+      "key_ingredients": ["hyaluronic acid", "vitamin B5"],
+      "benefits": {
+        "dry": ["Deep hydration", "Restores skin barrier", "Reduces flakiness"],
+        "normal": ["Maintains skin hydration", "Plumps skin"],
+        "oily": ["none"],
+        "combination": ["none"],
+        "sensitive": ["none"]
+      }
+    },
+    "Retinol 0.2% in Squalane": {
+      "skin_type": ["normal", "dry"],
+      "key_ingredients": ["retinol", "squalane"],
+      "benefits": {
+        "normal": ["Reduces fine lines", "Improves skin turnover"],
+        "dry": ["Anti-aging", "Supports skin renewal", "Prevents dryness with squalane"],
+        "oily": ["none"],
+        "combination": ["none"],
+        "sensitive": ["none"]
+      }
+    },
+    "Buffet": {
+      "skin_type": ["normal", "dry", "sensitive"],
+      "key_ingredients": ["peptides", "hyaluronic acid", "amino acids"],
+      "benefits": {
+        "normal": ["Targets multiple signs of aging", "Improves skin elasticity"],
+        "dry": ["Boosts hydration", "Restores firmness"],
+        "sensitive": ["Gentle anti-aging", "Strengthens skin barrier"],
+        "oily": ["none"],
+        "combination": ["none"]
+      }
+    },
+    "Vitamin C Suspension 23% + HA Spheres 2%": {
+      "skin_type": ["normal", "dry"],
+      "key_ingredients": ["vitamin C", "hyaluronic acid"],
+      "benefits": {
+        "normal": ["Brightens skin", "Evens skin tone"],
+        "dry": ["Boosts radiance", "Hydrates while reducing dullness"],
+        "oily": ["none"],
+        "combination": ["none"],
+        "sensitive": ["none"]
+      }
+    },
+    "AHA 30% + BHA 2% Peeling Solution": {
+      "skin_type": ["oily", "combination"],
+      "key_ingredients": ["glycolic acid", "salicylic acid", "hyaluronic acid"],
+      "benefits": {
+        "oily": ["Deep exfoliation", "Unclogs pores", "Fights acne"],
+        "combination": ["Smooths uneven skin texture", "Clears congested pores"],
+        "dry": ["none"],
+        "normal": ["none"],
+        "sensitive": ["none"]
+      }
+    },
+    "100% Organic Cold-Pressed Rose Hip Seed Oil": {
+      "skin_type": ["dry", "sensitive"],
+      "key_ingredients": ["rose hip oil"],
+      "benefits": {
+        "dry": ["Locks in moisture", "Improves elasticity"],
+        "sensitive": ["Soothes irritation", "Reduces redness"],
+        "oily": ["none"],
+        "normal": ["none"],
+        "combination": ["none"]
+      }
+    },
+    "Alpha Arbutin 2% + HA": {
+      "skin_type": ["normal", "sensitive"],
+      "key_ingredients": ["alpha arbutin", "hyaluronic acid"],
+      "benefits": {
+        "normal": ["Reduces dark spots", "Evens skin tone"],
+        "sensitive": ["Brightens gently", "Minimizes pigmentation without irritation"],
+        "oily": ["none"],
+        "dry": ["none"],
+        "combination": ["none"]
+      }
+    },
+    "Caffeine Solution 5% + EGCG": {
+      "skin_type": ["all"],
+      "key_ingredients": ["caffeine", "EGCG"],
+      "benefits": {
+        "all": ["Reduces puffiness", "Minimizes dark circles", "Refreshes under-eye area"],
+        "oily": ["Reduces puffiness", "Minimizes dark circles", "Refreshes under-eye area"],
+        "dry": ["Reduces puffiness", "Minimizes dark circles", "Refreshes under-eye area"],
+        "normal": ["Reduces puffiness", "Minimizes dark circles", "Refreshes under-eye area"],
+        "combination": ["Reduces puffiness", "Minimizes dark circles", "Refreshes under-eye area"],
+        "sensitive": ["Reduces puffiness", "Minimizes dark circles", "Refreshes under-eye area"]
+      }
+    },
+    "Natural Moisturizing Factors + HA": {
+      "skin_type": ["normal", "dry", "sensitive"],
+      "key_ingredients": ["amino acids", "fatty acids", "hyaluronic acid"],
+      "benefits": {
+        "normal": ["Maintains hydration", "Protects skin barrier"],
+        "dry": ["Restores lost moisture", "Prevents flakiness"],
+        "sensitive": ["Soothes dryness", "Non-irritating hydration"],
+        "oily": ["none"],
+        "combination": ["none"]
+      }
+    }
+  }
+
+
+    
+  
+
+
+
+
+  
+
+
