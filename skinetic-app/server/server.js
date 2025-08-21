@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 
 // Routes
 import productRoutes from "./routes/products.js";
-import benefitsRoutes from "./routes/benefits.js"; // ✅ new benefits route
+import benefitsRoutes from "./routes/benefits.js";
 
 dotenv.config();
 
@@ -14,7 +14,7 @@ const app = express();
 // ✅ CORS Setup for Production
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:3000", // use env var or fallback
+    origin: process.env.CLIENT_URL || "http://localhost:3000",
     credentials: true,
   })
 );
