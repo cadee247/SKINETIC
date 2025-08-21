@@ -6,15 +6,17 @@ const ProductList = ({ refreshTrigger }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
+    const apiUrl = process.env.REACT_APP_API_URL;
     axios
-      .get("http://localhost:5000/api/products")
+      .get(`${apiUrl}/api/products`)
       .then((res) => setProducts(res.data))
       .catch((err) => console.error("Failed to load products:", err));
   }, [refreshTrigger]);
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/products/${id}`);
+      const apiUrl = process.env.REACT_APP_API_URL;
+      await axios.delete(`${apiUrl}/api/products/${id}`);
       setProducts(products.filter((p) => p._id !== id));
     } catch (err) {
       console.error("Failed to delete product:", err);
