@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./productform.css";
 
-// Example brands and products (excluding The Ordinary)
 const PRODUCTS = {
   cerave: [
     "Hydrating Facial Cleanser",
@@ -86,9 +85,13 @@ const ProductForm = ({ onCreated }) => {
     }
 
     try {
-      // Fetch benefits from backend
+      const apiUrl = process.env.REACT_APP_API_URL;
+      if (!apiUrl) {
+        throw new Error("Missing REACT_APP_API_URL environment variable.");
+      }
+
       const res = await axios.post(
-        "http://localhost:5000/api/benefits",
+        `${apiUrl}/api/benefits`,
         {
           name: form.name,
           brand: form.brand,
@@ -104,13 +107,11 @@ const ProductForm = ({ onCreated }) => {
         return;
       }
 
-      // Directly use the benefits array from backend
       let fetchedBenefits = productInfo.benefits;
       if (!fetchedBenefits || fetchedBenefits.length === 0) {
         fetchedBenefits = ["No benefits found."];
       }
 
-      // Step routine
       const stepRoutine = [
         "Cleanse your face",
         `Apply ${form.name} (${form.brand})`,
@@ -138,7 +139,7 @@ const ProductForm = ({ onCreated }) => {
       });
     } catch (err) {
       console.error(err);
-      setError("Failed to fetch product data. Is your backend running?");
+      setError("Failed to fetch product data. Is your backend running and CORS enabled?");
     } finally {
       setLoading(false);
     }
