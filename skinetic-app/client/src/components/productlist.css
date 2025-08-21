@@ -1,0 +1,46 @@
+.product-list {
+  background: rgba(255, 255, 255, 0.25); /* glass-style background */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 25px;
+  border-radius: 24px;
+  max-width: 650px;
+  margin: 20px auto;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.product-list h2 {
+  color: #1e293b; /* text-primary */
+  margin-bottom: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.product-item {
+  background: rgba(224, 242, 254, 0.8); /* subtle light blue gradient */
+  backdrop-filter: blur(10px);
+  padding: 20px 25px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.product-item button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.product-item button:hover {
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+}
