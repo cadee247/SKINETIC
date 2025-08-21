@@ -5,23 +5,24 @@ import mongoose from "mongoose";
 
 // Routes
 import productRoutes from "./routes/products.js";
-
-import benefitsRoutes from "./routes/benefits.js";     // ✅ new benefits route
+import benefitsRoutes from "./routes/benefits.js"; // ✅ new benefits route
 
 dotenv.config();
 
 const app = express();
 
-// Middleware
+// ✅ CORS Setup for Production
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: process.env.CLIENT_URL || "http://localhost:3000", // use env var or fallback
     credentials: true,
   })
 );
+
+// Middleware
 app.use(express.json());
 
-// MongoDB connection
+// ✅ MongoDB Connection
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("✅ MongoDB connected"))
@@ -36,13 +37,13 @@ await redisClient.connect();
 app.set("redis", redisClient);
 */
 
-// Routes
+// ✅ Routes
 app.use("/api/products", productRoutes);
 app.use("/api/benefits", benefitsRoutes);
 
-// Test route
+// ✅ Test Route
 app.get("/", (req, res) => res.send("Skinetic API is running 🚀"));
 
-// Start server
+// ✅ Start Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`✅ Backend running on port ${PORT}`));
