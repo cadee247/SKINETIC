@@ -1,4 +1,3 @@
-// routes/benefits.js
 import express from "express";
 import fs from "fs";
 import path from "path";
@@ -36,7 +35,7 @@ router.post("/", (req, res) => {
   // If not found by brand, search all brands
   if (!productData) {
     for (const [brandKey, products] of Object.entries(allBenefits)) {
-      if (brandKey === "ingredients") continue; // skip ingredients
+      if (brandKey === "ingredients") continue;
       const found = Object.entries(products).find(
         ([prodName]) => normalize(prodName) === normalizedName
       );
@@ -48,26 +47,29 @@ router.post("/", (req, res) => {
   }
 
   if (!productData) {
-    return res.status(404).json({ error: "Product not found" });
+    return res.status(404).json({ error: `Product "${name}" not found in benefits.json` });
   }
 
   const [productName, productInfo] = productData;
 
-  // Get benefits for the skin type
+  if (!productInfo || !productInfo.benefits) {
+    return res.status(500).json({ error: `No benefits data found for "${productName}"` });
+  }
+
   let benefits = productInfo.benefits[normalizedSkin];
+
   if (!benefits || (Array.isArray(benefits) && benefits.length === 0)) {
-    benefits = ["No benefits found."];
+    benefits = ["No benefits found for this skin type."];
   } else if (typeof benefits === "string") {
     benefits = benefits.split(",").map((b) => b.trim());
   }
 
-  // Basic routine
   const routineSteps = [
     "Cleanse your face",
     `Apply ${productName}${brand ? ` (${brand})` : ""}`,
     "Finish with moisturizer",
   ];
-  if (normalizedSkin === "normal" || normalizedSkin === "dry" || normalizedSkin === "oily") {
+  if (["normal", "dry", "oily"].includes(normalizedSkin)) {
     routineSteps.push("Don't forget sunscreen!");
   }
 
